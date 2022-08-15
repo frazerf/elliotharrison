@@ -1,0 +1,28 @@
+footer {
+    margin-bottom: 30px;
+    .copyright {
+        font-family: $base-heading-font-family;
+        font-size: 14px;
+        margin: 0;
+        text-align: right;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0%;
+        margin: 0;
+        display: flex;
+        li {
+            margin-right: 30px;
+            &:nth-last-of-type(1) {
+                margin-right: 0;
+            }
+            font-weight: 300;
+            font-size: 14px;
+            a {
+                color: black;
+            }
+        }
+    }
+
+}

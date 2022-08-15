@@ -2,11 +2,51 @@
 # Main Content
 *------------------*/
 
-.main-content {
-    align-items: center;
+.logo {
+    font-family: $base-heading-font-family;
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    flex-direction: column;
     text-align: center;
+    &:hover {
+        text-decoration: none;
+    }
+    .topline {
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    .subline {
+        font-size: 11px;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.profile-img {
+    margin-bottom: 20px;
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
+.services-img {
+    margin-bottom: 20px;
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.contact-image {
+    background: url('../images/weave.jpg');
+    height: 100%;
     width: 100%;
+    background-size: cover;
+    background-position: 50%;
 }

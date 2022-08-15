@@ -1,0 +1,18 @@
+.section-line {
+    display: flex;
+    justify-content: center;
+    .line {
+        height: 100px;
+        width: 1px;
+        background: #E8E8E8;
+    }
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include media-breakpoint-up(md) {
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}

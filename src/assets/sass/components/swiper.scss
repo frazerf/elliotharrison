@@ -1,0 +1,40 @@
+.hero--swiper {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    @include media-breakpoint-up(md) {
+        width: 70%;
+    }
+    .swiper-wrapper {
+        .swiper-slide {
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.swiper__controls {
+    display: none;
+    margin-top: 40px;
+    @include media-breakpoint-up(md) {
+        display: flex;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: 0;
+        color: #E8E8E8;
+    }
+    .swiper-button-next {
+        margin-left: 20px;
+    }
+}

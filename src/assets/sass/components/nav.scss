@@ -1,26 +1,52 @@
 /*------------------*
 # Nav
 *------------------*/
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    background: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include media-breakpoint-up(md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
 
 nav {
-    background: #333;
-    border-bottom-right-radius: 5px;
-    left: 0;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
-    }
-
-    li a {
-        color: #f9f9f9;
-
-        &:hover {
-            text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        li {
+            a {
+                color: #3C3C3C;
+                text-transform: uppercase;
+                font-family: $base-heading-font-family;
+                font-size: 14px;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
+    }
+}
+
+.h-mobile {
+    display: block;
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.h-desktop {
+    display: none;
+    @include media-breakpoint-up(md) {
+        display: block;
     }
 }

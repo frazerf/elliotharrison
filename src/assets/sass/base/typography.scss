@@ -8,8 +8,66 @@
 
 .h1 {
   font-family: $base-heading-font-family;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.h2 {
+  font-family: $base-heading-font-family;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.h4 {
+  font-size: 14px;
+  letter-spacing: 3.1px;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.p {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 26px;
+  &.leadin {
+    font-size: 18px;
+  }
 }
 
 h1 {
   @extend .h1;
+}
+
+h2 {
+  @extend .h2;
+}
+
+h4 {
+  @extend .h4;
+}
+
+p {
+  @extend .p;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: left;
+  @include media-breakpoint-up(md) {
+    text-align: right;
+  }
+}
+
+.mbt-5 {
+  margin-bottom: 5px;
 }

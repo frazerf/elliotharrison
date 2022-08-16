@@ -8,6 +8,13 @@
     @include media-breakpoint-up(md) {
         width: 70%;
     }
+    .swiper--overlay {
+        position: absolute;
+        height: 100%;
+        background: rgba($color: #ffffff, $alpha: 0.2);
+        width: 100%;
+        z-index: 2;
+    }
     .swiper-wrapper {
         .swiper-slide {
             img {

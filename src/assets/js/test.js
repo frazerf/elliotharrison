@@ -1,4 +1,8 @@
-const swiper = new Swiper('.swiper', {
+/* ------------------------------------ */
+/* Swiper */
+/* ------------------------------------ */
+
+const swiper = new Swiper('.hero--swiper', {
     effect: "fade",
     // Optional parameters
     direction: 'horizontal',
@@ -12,6 +16,33 @@ const swiper = new Swiper('.swiper', {
       prevEl: '.swiper-button-prev',
     }
   });
+
+/* ------------------------------------ */
+/* Waypoints */
+/* ------------------------------------ */
+  var waypoint = new Waypoint({
+    element: document.getElementById('firstVideoTrigger'),
+    handler: function(direction) {
+        document.getElementById("firstVideo").play();
+    },
+    offset: '75%'
+  })
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('secondVideoTrigger'),
+    handler: function(direction) {
+        document.getElementById("secondVideo").play();
+    },
+    offset: '75%'
+  })
+
+  var waypoint = new Waypoint({
+    element: document.getElementById('thirdVideoTrigger'),
+    handler: function(direction) {
+        document.getElementById("thirdVideo").play();
+    },
+    offset: '75%'
+  })
 
 /* ------------------------------------ */
 /* Scroll To Functionality */

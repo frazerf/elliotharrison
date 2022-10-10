@@ -226,13 +226,13 @@
         <div>
           <form name="contact" action="/thankyou.html" method="POST" data-netlify="true">
             <label for="name">Name</label>
-            <input name="name" id="name" type="text" />
+            <input name="name" id="name" type="text" required />
 
             <label for="email">Email Address</label>
-            <input name="email" id="email" type="email" />
+            <input name="email" id="email" type="email" required />
 
             <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" required></textarea>
 
             <p class="hidden">
               <label>

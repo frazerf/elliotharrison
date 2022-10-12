@@ -8,10 +8,13 @@
 
 .h1 {
   font-family: $base-heading-font-family;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: normal;
   margin: 0;
   margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+  }
 }
 
 .h2 {
